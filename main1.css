@@ -7,6 +7,7 @@ body::-webkit-scrollbar {
     display: none;
   }
   
+  
 .tabbll tr:hover td{font-size:20px;
                     color:orangered;}
 
@@ -147,7 +148,7 @@ body::-webkit-scrollbar {
 .secimg{
             width:100%;
             object-fit:cover;
-            height:93vh;
+            height:100vh;
             z-index:-1;
             object-position:76% 80%
             }
@@ -570,7 +571,7 @@ z-index:1}
             }
 
 .oh{object-fit:cover;
-    max-height:400px;
+    max-height:600px;
     width:100%;}        
     
     
@@ -795,3 +796,15 @@ color:orangered }
 .fsa1:hover{color:orangered !important;}
 
 .mhimg{height:100%;}
+.topCss
+{
+    margin-top: -96px;
+    z-index: -10;
+    display: block;
+    position: relative;
+}
+.colorbtn
+{
+    width: 10px;
+    display: inline-block;
+}
