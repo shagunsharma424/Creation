@@ -6,6 +6,11 @@
 body::-webkit-scrollbar {
     display: none;
   }
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -54,7 +59,7 @@ body::-webkit-scrollbar {
             }
             
 .nav-link{color:white;
-        font-size:12px; }
+        font-size:15px; }
 
 .icon{color:white;
         transition:color 1s, transform 2s;
@@ -70,7 +75,7 @@ body::-webkit-scrollbar {
 
  .naa a:hover{color:orangered !important;}
  .naa a {
-    color: rgb(240 238 238 / 92%);
+    color: white;
     padding-left: 0px !important;
 }
     #spimg1 {
@@ -82,11 +87,17 @@ body::-webkit-scrollbar {
         border-radius: 22PX;
     }
 
-.motoa{background-color:orangered;
-    color:white;}
+.motoa{    
+    background-color: orangered;
+    color: white;
+    padding: 6px !important;
+font-size: 12px;}
 .motoa:hover{text-decoration: none;
             background-color:white;
-            color:orange;
+            color:orangered;
+            font-size: 16px;
+            /* border: 1.3px solid orangered; */
+            /* border-radius: 10px; */
             
             }
 .bg-dark1 {
@@ -217,16 +228,15 @@ body::-webkit-scrollbar {
 
 
 .globalmodelspara{
-    font-size:90px;
+    font-size: 54px;
     color:rgb(255 87 34);
- 
     position:relative;
     top:64px;
     }
 .servc{padding:400px 0px 0px 60px;
             height:680px;}
 
- .rowset{margin:111px 0px 40px 0px !important;
+ .rowset{margin:71px 0px 40px 0px !important;
         }            
 
  .spec{margin-top: 30px;
@@ -255,18 +265,20 @@ body::-webkit-scrollbar {
                 
             }
 
-.anchov{border:1px solid orangered;
-        color:orangered;
+.anchov{border:1.5px solid orangered !important;
+        color:orangered !important;
         padding: 10px 23px !important;
-        border-radius: 12px;
-        font-size: 15px;
+        border-radius: 12px !important;
+        font-size: 15px !important;
    }
   .speca1 :hover{text-decoration:none;
                 } 
 
    .anchov:hover{ text-decoration:none;
-                    background-color:rgb(255 87 34);;
-    color:white;}
+                    background-color:rgb(255 87 34) !important;
+    color:white !important;}
+
+    
 
     .div-of-footer-aaa li{text-align:center}
     .div-of-footer-a li{text-align:center}
@@ -494,15 +506,15 @@ body::-webkit-scrollbar {
 
 
 
-.hov1:hover{transform:scale(1.4) ;
-            text-decoration:none;}
-.sdtc{margin-top:31px;
+.hov1:hover{    transform: scale(1.2);
+    text-decoration: none;}
+.sdtc{    margin-top: 31px;
     background: white;
-    padding: 17px 1px;
+    padding: 11px 1px 0px;
     position: sticky;
     top: 0px;
     z-index: 9999;
-    color:white
+    color: white;
 }
 
 
@@ -756,12 +768,16 @@ color:orangered }
       .butt_out:focus { outline: none; }
 
 
-.bdimage{background-image:url('raaa.jpg');
+.bdimage{background-image:url('https://static.autox.com/uploads/2023/09/MotoGP-KTM-Jack-Miller.jpg');
         background-size:cover;
     background-position:top;  
+
    }
-.bdimage1{background-image:url('ktmbikeimg55.jpg');
-        background-position:top;        
+.bdimage1{    
+    background-image: url(https://static.autox.com/uploads/2023/09/MotoGP-KTM-Jack-Miller.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;     
 }
 .myCard {
     position: relative;
@@ -845,8 +861,8 @@ color:orangered }
 .toRightAnimation
 {
     /* transform: scaleX(-1); */
-    animation:fadeIn;
-    animation-duration: 1s; 
+    animation:fadeInUp;
+    animation-duration: 1.3s; 
 }
 .bounceAnimation
 {
@@ -854,6 +870,7 @@ color:orangered }
     animation:bounce;
     animation-duration: 1s; 
 }
+
 .headingFontSizes 
 {
     font-size: 29px !important;
@@ -876,9 +893,40 @@ color:orangered }
 
 .whiteBorder
 {
-    border: 3px solid #ff5500a6 !important;
+    border: 3p
+    x solid #ff5500a6 !important;
     border-style: none none solid none !important;
     padding: 0px 16px 10px;
     border-radius: 0px;
     /* text-shadow: 10px 10px 25px #f50; */
+}
+.alignVideo
+{
+    position: absolute;
+    top:0px;
+    z-index: -11111;
+    /* max-height: 100vh; */
+    overflow: hidden;
+    /* filter: blur(4px); */
+}
+.cardofad390
+{
+    height:400px;
+    overflow: hidden auto;
+}
+.cardofad390::-webkit-scrollbar
+{
+    display: none
+}
+.cardImageSie
+{
+    height: 184px;
+    max-width: 249px;
+    margin: auto;
+}
+.cardofad390 h5
+{
+    font-size: 12px;
+    text-align: justify !important;
+
 }

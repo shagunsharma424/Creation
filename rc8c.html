@@ -34,7 +34,11 @@
 	}
 	function rdmore()
 	{
-		document.querySelector('#idrdmore').classList.toggle("divh")
+		document.getElementById("techReadMoreHeight").style.height="100%"
+		document.getElementById("techReadMoreHeight").style.overflow="visible"
+		document.getElementById("rdmore12").style.display="none"
+		
+		
 	}
 	window.onscroll = function() {scrollFunction()};
 
@@ -43,14 +47,14 @@
 		document.getElementById("stikyheader").style.visibility="visible"
 		document.getElementById("mb1231").classList.remove("whiteBorder")
 		// document.getElementById("stikyheader").style.display="block"
-		if(document.documentElement.scrollTop>1700 && document.documentElement.scrollTop<2400  )
+		if(document.documentElement.scrollTop>1700 && document.documentElement.scrollTop<2400  ) // c
 		{
 			// alert("triggered")
 			console.log("dsdddddd",document.getElementById("mb1231"))
 			document.getElementById("mb1231").classList.add("whiteBorder")
 			document.getElementById("mb124").classList.remove("whiteBorder")
 		}
-		else if(document.documentElement.scrollTop>2800 && document.documentElement.scrollTop<3500  )
+		else if(document.documentElement.scrollTop>2800 && document.documentElement.scrollTop<4000  ) //p
 		{
 			// alert("triggered")
 			// console.log("dsdddddd",document.getElementById("mb1231"))
@@ -60,7 +64,7 @@
 			document.getElementById("mb126").classList.remove("whiteBorder")
 			document.getElementById("mb127").classList.remove("whiteBorder")
 		}
-		else if(document.documentElement.scrollTop>3800 && document.documentElement.scrollTop<5000  )
+		else if(document.documentElement.scrollTop>4000 && document.documentElement.scrollTop<5000  ) //e
 		{
 			// alert("triggered")
 			// console.log("dsdddddd",document.getElementById("mb1231"))
@@ -104,6 +108,56 @@
 			document.getElementById("mb127").classList.remove("whiteBorder")
 			
 		}
+		if(document.documentElement.scrollTop>342)
+		{
+			document.getElementById("hidesTickyDiv").style.visibility="visible"
+			document.getElementById("hidesTickyDiv").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>890)
+		{
+			document.getElementById("hidesTickyDiv2").style.visibility="visible"
+			document.getElementById("hidesTickyDiv2").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>1580)
+		{
+			document.getElementById("mb1").style.visibility="visible"
+			document.getElementById("mb1").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>2071)
+		{
+			document.getElementById("mb1image").style.visibility="visible"
+			document.getElementById("mb1image").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>2791)
+		{
+			document.getElementById("mb2").style.visibility="visible"
+			document.getElementById("mb2").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>3264)
+		{
+			document.getElementById("mb2image").style.visibility="visible"
+			document.getElementById("mb2image").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>3864)
+		{
+			document.getElementById("mb3").style.visibility="visible"
+			document.getElementById("mb3").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>4340)
+		{
+			document.getElementById("mb3image").style.visibility="visible"
+			document.getElementById("mb3image").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>5040)
+		{
+			document.getElementById("mb4").style.visibility="visible"
+			document.getElementById("mb4").classList.add("toRightAnimation")
+		}
+		if(document.documentElement.scrollTop>5704)
+		{
+			document.getElementById("mb4image").style.visibility="visible"
+			document.getElementById("mb4image").classList.add("toRightAnimation")
+		}
 
 
 		// if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -120,28 +174,27 @@
         <div class="row no-gutters">
 			<div class="col">
 				<div id="heada6 ">
-			<div class="navbar navbar-expand-md font-weight-bold ">
-		
-			  <button class="navbar-toggler ml-auto " type="button" data-toggle="collapse" data-target="#collapsemynavba"><i class="fa fa-plus faa icon"  onclick="rot()"></i></button>
-			  <div class="collapse navbar-collapse" id="collapsemynavba" >
-					  <ul class="navbar-nav fnav ml-auto naa ">
-						<li class="nav-item p-2 p-md-3"><a class=" nav-link animate__animated animate__backInRight" href="index.html">Home</a></li>
-						<li class="nav-item p-2 p-md-3"><a class="  nav-link animate__animated animate__backInRight" href="motorcycles.html">Motorcyles</a></li>
-						<li class="nav-item p-2 p-md-3"><a class="  nav-link animate__animated animate__backInRight" href="index.html">Rides</a></li>
-						<li class="nav-item p-2 p-md-3"><a class=" nav-link animate__animated animate__backInRight" href="accesories.html">Accessories</a></li>
-						<li class="nav-item p-2 p-md-3 "><a class=" nav-link animate__animated animate__backInRight" href="login.html">Login</a></li>
-						<li class="nav-item p-2 p-md-3 idd1 "><a class=" nav-link animate__animated animate__backInRight pt-0" href="index.html"> <img src="navbar-logo.png" class="ktm-image animate__animated animate__backInRight   "></a></li>
-					  </ul>
-			  </div>
-			</div>
+					<div class="navbar navbar-expand-md font-weight-bold ">
+					<button class="navbar-toggler ml-auto " type="button" data-toggle="collapse" data-target="#collapsemynavba"><i class="fa fa-plus faa icon"  onclick="rot()"></i></button>
+					<div class="collapse navbar-collapse" id="collapsemynavba" >
+						<ul class="navbar-nav fnav ml-auto naa ">
+							<li class="nav-item p-2 p-md-3"><a class=" nav-link animate__animated animate__backInRight" href="index.html">Home</a></li>
+							<li class="nav-item p-2 p-md-3"><a class="  nav-link animate__animated animate__backInRight" href="motorcycles.html">Motorcyles</a></li>
+							<li class="nav-item p-2 p-md-3"><a class="  nav-link animate__animated animate__backInRight" href="index.html">Rides</a></li>
+							<li class="nav-item p-2 p-md-3"><a class=" nav-link animate__animated animate__backInRight" href="accesories.html">Accessories</a></li>
+							<li class="nav-item p-2 p-md-3 "><a class=" nav-link animate__animated animate__backInRight" href="login.html">Login</a></li>
+							<li class="nav-item p-2 p-md-3 idd1 "><a class=" nav-link animate__animated animate__backInRight pt-0" href="index.html"> <img src="navbar-logo.png" class="ktm-image animate__animated animate__backInRight   "></a></li>
+						</ul>
+					</div>
+					</div>
 				</div>
 			</div>
 	  </div>
 			
 	  <div class="row m-auto bookride text-lg-left ml-lg-5 text-center">
 		<div class="col">
-			<p class="mb-0 animate__animated animate__rubberBand animate__delay-1s">THE NEW KTM 1290..</p>
-			<h1 class="font-weight-bold animate__animated animate__rubberBand animate__delay-2s">READY TO RACE</h1>
+			<p class="mb-0 toRightAnimation">THE NEW KTM RC8 race edition..</p>
+			<h1 class="font-weight-bold toRightAnimation">READY TO RACE</h1>
 			<a href="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_STAGE_MY24-KTM-RC-8C-STAGE-IMAGE_%23SALL_%23AEPI_%23V1.png" class="bgorange  px-5 py-3 text-white  text-decoration-none">Explore  </a>
 		</div>
 	  </div>
@@ -151,21 +204,22 @@
   <img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_STAGE_MY24-KTM-RC-8C-STAGE-IMAGE_%23SALL_%23AEPI_%23V1.png" class="secimg topCss animate__animated animate__fadeIn animate__slower "  >
 
 
-			<div class="row justify-content-lg-around  sdtc no-gutters" id="stikyheader">
+	<div class="row justify-content-lg-around  sdtc no-gutters" id="stikyheader" >
 			
-					<a id="mb1231" href="#mb1" style="transition: all 0.2s;" class="orangeclass2 hov1   " >01.<span class="hov2 " > CHASSIS</span></a>
-				
-					<a id="mb124" href="#mb2"  style="transition: all 0.2s;" class="orangeclass2 hov1    " >02.<span> PREMIUM COMPONENTRY</span></a>
-				
-					<a href="#mb3"  style="transition: all 0.2s;" class="orangeclass2 hov1    " id="mb125">03.<span class="">ENGINE</span></a>
-				
-					<a href="#mb4"  style="transition: all 0.2s;" class="orangeclass2 hov1    " id="mb126">04.<span> ELECTRONICS</span></a>
-				
-					<a href="#mb5"  style="transition: all 0.2s;" class="orangeclass2 hov1    " id="mb127">05.<span> READY TO RACE </span></a>
-				</div>
+		<a id="mb1231" href="#mb1" style="transition: all 0.2s;" class="orangeclass2 hov1   " >01.<span class="hov2 " > CHASSIS</span></a>
+	
+		<a id="mb124" href="#mb2"  style="transition: all 0.2s;" class="orangeclass2 hov1    " >02.<span> PREMIUM COMPONENTRY</span></a>
+	
+		<a href="#mb3"  style="transition: all 0.2s;" class="orangeclass2 hov1    " id="mb125">03.<span class="">ENGINE</span></a>
+	
+		<a href="#mb4"  style="transition: all 0.2s;" class="orangeclass2 hov1    " id="mb126">04.<span> ELECTRONICS</span></a>
+	
+		<a href="#mb5"  style="transition: all 0.2s;" class="orangeclass2 hov1    " id="mb127">05.<span> READY TO RACE </span></a>
+	</div>
+
+			
 					
-					
-					<div class="row justify-content-center mt-5 mb-5 m-0 p-0 pb-5 ">
+					<div class="row justify-content-center mt-5 mb-5 m-0 p-0 pb-5 " id="hidesTickyDiv"  style="visibility: hidden;">
 						<div class="col-sm-6 m-md-3 col-md-7 img-comp-img">
 							<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_90_LI_rc8c-21-90li_%23SALL_%23AEPI_%23V1.png" class="w-100 h-auto" id="beforeImg">
 						</div>
@@ -173,7 +227,7 @@
 
 				
 
-            <div class="row mt-4 mb-5 p-0 m-0">
+            <div class="row mt-4 mb-5 p-0 m-0" id="hidesTickyDiv2"  style="visibility: hidden;">
 				<div class="col-12 ">
 						<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_DET_MY24-KTM-RC8C-action-1_%23SALL_%23AEPI_%23V1.jpg" class=" w-100 h-auto mb-0 oh" >
 				</div>
@@ -183,16 +237,8 @@
 			         
             <!--engine-->
 				
-			<div class="row m-5">
-				<div class="col  ">
-							<!-- <h1 class=" mt-4  headingFontSizes" id="#mb1">01. CHASSIS</h1> -->
-				</div>
-		</div>
-
-		
-
 		<!--carousel for engine-->
-			<div class="row p-0 m-0" id="mb1">
+			<div class="row p-0 pt-5 m-0" id="mb1"  style="visibility: hidden;">
 					<div class="col-11 p-0 m-auto">
 
 						  
@@ -265,7 +311,7 @@
 				</div>
 			</div>
 
-			<div class="row mt-4 mb-5 p-0 m-0">
+			<div class="row mt-4 mb-5 p-0 m-0" id="mb1image" style="visibility: hidden;">
 				<div class="col-12 ">
 						<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_DET_MY24-KTM-RC8C-action-5_%23SALL_%23AEPI_%23V1.jpg" class="mt-5 w-100 h-auto  oh" >
 				</div>
@@ -283,7 +329,7 @@
 
 
 <!--carousel for engine-->
-<div class="row m-0 p-0"id="mb2">
+<div class="row m-0 p-0 pt-5" id="mb2" style="visibility: hidden;">
 <div class="col-11 p-0 m-auto">
 
 	  
@@ -346,7 +392,7 @@
 </div>
 </div>
 
-<div class="row mt-4 mb-5 p-0 m-0">
+<div class="row mt-4 mb-5 p-0 m-0"  id="mb2image" style="visibility: hidden;">
 	<div class="col-12 ">
 			<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_DET_MY24-KTM-RC8C-action-3_%23SALL_%23AEPI_%23V1.jpg" class=" w-100 h-auto mt-5 oh" >
 	</div>
@@ -360,7 +406,7 @@
 </div>
 </div>
 <!--carousel for chasie-->
-<div class="row p-0 m-0"id="mb3">
+<div class="row p-0 m-0 pt-5" id="mb3" style="visibility: hidden;">
 <div class="col-11 p-0 m-auto">
 
 	  
@@ -434,7 +480,7 @@
 </div>
 </div>
 
-<div class="row mt-4 mb-5 p-0 m-0">
+<div class="row mt-4 mb-5 p-0 m-0" id="mb3image" style="visibility: hidden;">
 	<div class="col-12 ">
 			<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_DET_MY24-KTM-RC8C-action-4_%23SALL_%23AEPI_%23V1.jpg" class=" w-100 h-auto mt-5 oh" >
 	</div>
@@ -451,7 +497,7 @@
 
 
 <!--carousel for body-->
-<div class="row m-0 p-0" id="mb4">
+<div class="row m-0 p-0 pt-5" id="mb4" style="visibility: hidden;">
 <div class="col-11 p-0 m-auto">
 
 	  
@@ -546,9 +592,9 @@
 
   
    
-<div class="row mt-4 mb-5 p-0 m-0">
-	<div class="col-12 ">
-			<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_DET_MY24-KTM-RC8C-action-2_%23SALL_%23AEPI_%23V1.jpg" class=" w-100 h-auto mt-5 oh" >
+<div class="row mt-4 mb-5 p-0 m-0" id="mb4image" style="visibility: hidden;">
+	<div class="col-12 pt-5">
+			<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_DET_MY24-KTM-RC8C-action-2_%23SALL_%23AEPI_%23V1.jpg" class=" w-100 h-auto mt-5 oh pt-5" >
 	</div>
    
 </div>
@@ -566,7 +612,7 @@
 
 
 <!--carousel for body-->
-<div class="row p-0 m-0"id="mb5">
+<div class="row p-0 m-0 pt-5"id="mb5">
 <div class="col-11 p-0 m-auto">
 
 	  
@@ -664,15 +710,15 @@
 
 <div class="row m-5">
 <div class="col ">
-		<h1 class="mt-4  headingFontSizes"> technical details</h1>
+		<!-- <h1 class="mt-4  headingFontSizes"> technical details</h1> -->
 </div>
 </div>
 
 
 
-<div class="row mt-5 pt-5 m-5">
+<div class="row mt-5 pt-5 m-5" style="height: 410px;overflow: hidden;transition: all 2s;" id="techReadMoreHeight">
 <div class="col-md-4 col-sm-12 d-flex justify-content-center ">
-	<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_FACT_rc8c-21-td_%23SALL_%23AEPI_%23V1.jpg" class="w-100 mhimg">
+	<img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_FACT_rc8c-21-td_%23SALL_%23AEPI_%23V1.jpg" class="w-100 h-auto mhimg">
 </div>
 
 
@@ -754,8 +800,9 @@
 </table>
 
 </div>
-<button class="btn btn-danger d-md-none d-block m-auto " id="rdmore12" onclick="rdmore()">Read More</button>
 </div>
+
+<button class="btn anchov m-auto" style="display: block;" id="rdmore12" onclick="rdmore()">Read More...</button>
 
 <!--poerparts-->
 
