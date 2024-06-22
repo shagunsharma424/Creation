@@ -44,7 +44,7 @@
 
 	function scrollFunction() {
 		console.log("dssddsd",document.documentElement.scrollTop)
-		document.getElementById("stikyheader").style.visibility="visible"
+		document.getElementById("stikyheader").style.opacity="1"
 		document.getElementById("mb1231").classList.remove("whiteBorder")
 		// document.getElementById("stikyheader").style.display="block"
 		if(document.documentElement.scrollTop>1700 && document.documentElement.scrollTop<2400  ) // c
@@ -93,13 +93,13 @@
 			document.getElementById("mb125").classList.remove("whiteBorder")
 			document.getElementById("mb126").classList.remove("whiteBorder")
 			document.getElementById("mb127").classList.add("whiteBorder")
-			document.getElementById("stikyheader").style.visibility="visible"
+			document.getElementById("stikyheader").style.opacity="1"
 			document.getElementById("stikyheader").style.display="flex"
 		}
 		else if(document.documentElement.scrollTop>6700)
 		{
-			document.getElementById("stikyheader").style.display="none"
-			document.getElementById("stikyheader").style.visibility="hidden"
+			// document.getElementById("stikyheader").style.display="none"
+			document.getElementById("stikyheader").style.opacity="0"
 			document.getElementById("mb1231").classList.remove("whiteBorder")
 			document.getElementById("mb1231").classList.remove("whiteBorder")
 			document.getElementById("mb124").classList.remove("whiteBorder")
